@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+    <title>Results</title>
+    </head>
+    <body>
+		<main>
+            <section class="boxInfo">
+                <h1>Submitted Info</h1>
+                <div class="infoDetails">
+                    <c:set var="element" value="${ results }"/>
+                    <p><span> Name: </span> <%= user.name %> </p>
+                    <p><span> Location: </span> <%= user.location %> </p>
+                    <p><span> Favorite Language: </span> <%= user.language %> </p>
+                    <p><span> Comments: </span> <%= user.comments %> </p>
+                </div>
+                <div>
+                    <button>
+                        <a href="/">Go Back</a>
+                    </button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
